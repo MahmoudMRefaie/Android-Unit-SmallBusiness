@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:src="@drawable/coffe_cover"/>
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/cover"
+        android:paddingLeft="20dp"
+        android:background="@drawable/title"
+        android:layout_marginTop="2dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Coffee Shop"
+            android:textSize="30dp"
+            android:textColor="#020F55"
+            android:fontFamily="sans-serif-black"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hot espresso with wonderfull taste"
+            android:textSize="20dp"
+            android:textColor="#2B2B2B"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/body"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/location_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_place_grey_24dp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/location_logo"
+            android:fontFamily="casual"
+            android:text="Luxor - Abo El-Hagag Square"
+            android:textColor="#3B3B3D"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/phone_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/location_logo"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_phone_grey_24dp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/phone_logo"
+            android:fontFamily="casual"
+            android:text="01145525919"
+            android:textColor="#3B3B3D"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/callBtn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="Call"
+            android:layout_below="@+id/location"
+            android:layout_toRightOf="@+id/phone"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="#8A8A8A"/>
+
+        <ImageView
+            android:id="@+id/link_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/phone_logo"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_public_black_24dp" />
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/link_logo"
+            android:layout_below="@id/phone"
+            android:fontFamily="casual"
+            android:text="fb.com/lionmaax"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:autoLink="web"
+            android:linksClickable="true"/>
+
+
+        <EditText
+            android:id="@+id/writeComment"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/link_logo"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="@drawable/comment_border"
+            android:hint="Write a comment..."/>
+
+        <ImageView
+            android:id="@+id/sentComment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/link_logo"
+            android:layout_toRightOf="@+id/writeComment"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_send_black_24dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
