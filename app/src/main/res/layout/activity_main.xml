@@ -18,23 +18,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_below="@+id/cover"
-        android:paddingLeft="20dp"
+        android:paddingLeft="@dimen/headerPaddingLeft"
         android:background="@drawable/title"
         android:layout_marginTop="2dp">
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My Coffee Shop"
-            android:textSize="30dp"
+            android:text="@string/header_title"
+            android:textSize="@dimen/title"
             android:textColor="#020F55"
             android:fontFamily="sans-serif-black"/>
         <TextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hot espresso with wonderfull taste"
-            android:textSize="20dp"
+            android:text="@string/header_description"
+            android:textSize="@dimen/descAddressNumEmail"
             android:textColor="#2B2B2B"
             android:fontFamily="sans-serif-medium"/>
     </LinearLayout>
@@ -64,9 +64,9 @@
             android:layout_marginTop="0dp"
             android:layout_toRightOf="@+id/location_logo"
             android:fontFamily="casual"
-            android:text="Luxor - Abo El-Hagag Square"
+            android:text="@string/address"
             android:textColor="#3B3B3D"
-            android:textSize="20dp"
+            android:textSize="@dimen/descAddressNumEmail"
             android:textStyle="bold" />
 
         <ImageView
@@ -86,9 +86,9 @@
             android:layout_marginTop="50dp"
             android:layout_toRightOf="@+id/phone_logo"
             android:fontFamily="casual"
-            android:text="01145525919"
+            android:text="@string/number"
             android:textColor="#3B3B3D"
-            android:textSize="20dp"
+            android:textSize="@dimen/descAddressNumEmail"
             android:textStyle="bold"/>
         <Button
             android:id="@+id/callBtn"
@@ -118,12 +118,11 @@
             android:layout_toRightOf="@+id/link_logo"
             android:layout_below="@id/phone"
             android:fontFamily="casual"
-            android:text="fb.com/lionmaax"
-            android:textSize="20dp"
+            android:text="@string/link"
+            android:textSize="@dimen/descAddressNumEmail"
             android:textStyle="bold"
             android:autoLink="web"
             android:linksClickable="true"/>
-
 
         <EditText
             android:id="@+id/writeComment"
@@ -133,7 +132,7 @@
             android:layout_marginTop="20dp"
             android:padding="10dp"
             android:background="@drawable/comment_border"
-            android:hint="Write a comment..."/>
+            android:hint="@string/hint"/>
 
         <ImageView
             android:id="@+id/sentComment"

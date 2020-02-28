@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Small Business</string>
+    <string name="header_title">My Coffee Shop</string>
+    <string name="header_description">Hot espresso with wonderfull taste</string>
+    <string name="address">Luxor - Abo El-Hagag Square</string>
+    <string name="number">01145525919</string>
+    <string name="link">fb.com/lionmaax</string>
+    <string name="hint">Write a comment...</string>
+    <dimen name="title">30sp</dimen>
+    <dimen name="descAddressNumEmail">20sp</dimen>
+    <dimen name="headerPaddingLeft">20sp</dimen>
 </resources>
