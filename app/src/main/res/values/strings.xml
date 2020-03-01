@@ -4,6 +4,7 @@
     <string name="header_description">Hot espresso with wonderfull taste</string>
     <string name="address">Luxor - Abo El-Hagag Square</string>
     <string name="number">01145525919</string>
+    <string name="callBtn">call</string>
     <string name="link">fb.com/lionmaax</string>
     <string name="hint">Write a comment...</string>
     <dimen name="imageHeight">273dp</dimen>

@@ -92,7 +92,7 @@
             android:id="@+id/callBtn"
             android:layout_width="@dimen/callBtnWidth"
             android:layout_height="@dimen/callBtnHeight"
-            android:text="Call"
+            android:text="@string/callBtn"
             android:layout_below="@+id/location"
             android:layout_toRightOf="@+id/phone"
             android:layout_marginTop="@dimen/callBtnMargin"

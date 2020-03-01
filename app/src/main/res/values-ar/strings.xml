@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Small Business</string>
+    <string name="header_title">My Coffee Shop</string>
+    <string name="header_description">قهوة ساخنة ذات مذاق رائع</string>
+    <string name="address">الأقصر - ميدان أبو الحجاج</string>
+    <string name="number">01145525919</string>
+    <string name="callBtn">إتصال</string>
+    <string name="link">fb.com/lionmaax</string>
+    <string name="hint">اكتب تعليق...</string>
+</resources>
